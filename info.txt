@@ -1,0 +1,30 @@
+--------------------------------------------------------
+DZIA£ANIE PROGRAMU:
+
+Szyfruje:   
+	z pliku Input/tekst.txt  do pliku Output/Szyfr.txt
+Deszyfruje: 
+	z pliku Output/Szyfr.txt do pliku Output/Deszyfrowane.txt
+Generuje:
+	Z plików Szyfr.txt oraz Deszyfrowane.txt pobiera dane
+	i tworzy z nich sformatowan¹ tabelê za pomoc¹ CSS w 
+	pliku wynik.html
+---------------------------------------------------------
+SZYFROWANIE:
+
+Zamiana znaku na liczbê (kod ASCII)
+Zamiana liczby(Dec) na inny system liczbowy
+	System do zaszyfrowania pierwszej liczby: 
+		dwójkowy
+	System do kolejnej wyliczamy ze wzoru:
+		Poprzednia_liczba(mod 8)+2
+	Przyk³ad: 
+		'Bit' zamieniamy na '66 105 116'
+		66 zamieniamy na postaæ binarn¹
+		1000010
+		wyliczamy kolejny system- (66 % 8)+2=4
+		105 zamieniamy na postaæ czwórkow¹
+		1221
+		wyliczamy (105 % 8)+2= 3
+		116 zamieniamy na postaæ trójkow¹
+		11022
