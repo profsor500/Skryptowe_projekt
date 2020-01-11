@@ -1,5 +1,5 @@
-
-
+import sys as s
+import os
 def HTML_table_creator(file_1, file_2):
     
     table="<table class='table-fill'><tr><td class='text-left'>Zaszyfrowany tekst</td><td class='text-left'>odszyfrowany tekst</td></tr>\n"
@@ -27,4 +27,4 @@ def HTML_table(data_file1, data_file2,w_file):
     f_szyfr.close()
     f_deszyfr.close()
     
-HTML_table("Output/Szyfr.txt","Output/Odszyfrowane.txt","stronaHTML/index.html")
+HTML_table(s.argv[1],s.argv[2],os.path.splitext(s.argv[3])[0]+'.html')
